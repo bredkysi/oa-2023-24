@@ -1,12 +1,24 @@
 const graphDiv = document.getElementById("graph");
 const premButton = document.getElementById("premier");
 const l1Button = document.getElementById("ligue1");
+const spanButton = document.getElementById("spanish");
+const germanButton = document.getElementById("german");
+const italyButton = document.getElementById("italy");
 
 premButton.onclick = () =>{
     fetcher(39)
 }
 l1Button.onclick = () =>{
     fetcher(61)
+}
+spanButton.onclick = () =>{
+    fetcher(140)
+}
+germanButton.onclick = () => {
+    fetcher(78)
+}
+italyButton.onclick = () => {
+    fetcher(135)
 }
 function fetcher(league){
     fetch(
